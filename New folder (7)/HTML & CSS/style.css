@@ -1,0 +1,452 @@
+:root {
+    --primarycolor: #407BFF ;
+    --primarycolor-opa: #407cffd3 ;
+    --secondarycolor: #83aaff ;
+    --lighting-color: #ffffff;
+    --bgcolor-1: #26313b ;
+    --bgcolor-2: #4e5860 ;
+    --padding:8%;
+    --blackc:black;
+
+}
+.light-theme{
+    
+        --primarycolor: #407BFF ;
+        --secondarycolor: #83aaff ;
+        --lighting-color: #000000;
+        --bgcolor-1: #fafbfc ;
+        --bgcolor-2: #d9e0e2 ;
+        --padding:8%;
+        --blackc:black;
+   
+}
+#icon { 
+  
+  width: 30px;
+  cursor: pointer;
+}
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;color: var(--lighting-color)};
+html[herf="index.html"]{font-family: 'Kanit', sans-serif; font-size: 16px;}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor-1);
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    
+}
+h1{
+    font-size: 3.65rem;
+    mqrgin:1.7rem 0;
+}
+h2{
+    font-size: 2.2rem;letter-spacing: 0.12; cursor: pointer;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom:3rem ;
+}
+h4{
+    font-size: 1.25rem;
+    color: var(--secondarycolor);
+}
+h5{
+    font-size: 1.37rem;
+}
+p{
+    color: var(--secondarycolor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+span {color: var(--primarycolor);}
+.aa{position: fixed;
+  width: 100%;
+    top: 0; 
+    background-image: linear-gradient(to bottom, var(--bgcolor-1), rgba(0, 0, 0, 0));
+}
+nav{padding-top:1rem; padding-left:var(--padding); padding-right:var(--padding);display: flex;justify-content: space-between; align-items: center;width: 100%;
+
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+    
+}
+
+nav ul li a{
+    color: var(--lighting-color); text-decoration: none; text-transform: capitalize;
+    transition:0.4s;
+}
+nav ul li a:hover{
+    color:var(--primarycolor)
+}
+
+.btn{
+    background-color: var(--primarycolor);
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    transition:0.4s;
+}
+.btn1{
+    
+    color:var(--lighting-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    transition:0.4s;
+}
+.btn:hover{
+    color: var(--primarycolor);
+    background-color: rgba(0,0,0,0); 
+    border: 2px solid var(--primarycolor);
+}
+.content{
+    margin-top: 5rem;
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-text{
+    
+    position: relative;
+    bottom: 70px;  
+}
+.social{
+    
+    align-content: center;
+    margin-top: 3.5rem;
+    margin-left: 3rem; 
+}
+.social a .link{
+    margin-left: .8rem;
+    width: 3.2rem;
+    
+}
+.social a .active{
+    margin-left: .75rem;
+    width: 3.2rem;
+   
+}
+.social img{
+    position: absolute;
+    width: 2.5rem;
+    transition: 0.4s;
+    opacity: 0;
+    transition: 1.2s;
+    
+}
+.so1{
+    rotate: 270deg;
+}
+.so2{
+    rotate: -270deg;
+}
+
+.social .active{
+    position: absolute;
+    width: 2.5rem;
+    transition: 0.4s;
+    opacity: 100%;
+}
+.social .link{
+    position: absolute;
+    width: 2.5rem;
+    transition: 0.4s;
+    opacity: 100%;
+}
+.social .link:hover{
+    opacity: 0;
+}
+
+.home .content-img{
+    
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+    
+}
+.home .content-img img{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+.content-img:hover .shape{
+    bottom: 40px;
+}
+.content-img:hover .pic{
+    left: 45%;
+}
+.about{
+   
+    background-color: var(--bgcolor-2);
+    padding: 5rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.about .content-img{
+    width: 45%;
+   
+    
+}
+.about .content-img img{
+     width:90%;
+     transition: 1s;
+}
+
+
+.about .content-text{
+    bottom: 50%;
+    width: 35%;
+    transition: 5s;
+
+}
+.about .content-text .text{
+    width: 100%;
+    transition: 1.2s;
+}
+.texth5{
+    display: none;
+}
+.bt{
+    background: var(--primarycolor);
+    padding: 0.5rem;
+    border-radius: 30px;
+    width: 6.9rem;
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid  #00000000;
+    align-content: center;
+}
+.bt2{
+    display: none;
+    background: var(--primarycolor);
+    padding: 0.5rem;
+    border-radius: 30px;
+    width: 6.9rem;
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid  #00000000;
+    align-content: center;
+    padding-left:1.7rem ;
+}
+.bt:hover{
+    color:var(--primarycolor);
+    border: 2px solid  var(--primarycolor);
+    background-color: #00000000;
+    align-content: center;
+}
+.bt2:hover{
+    color:var(--primarycolor);
+    border: 2px solid  var(--primarycolor);
+    background-color: #00000000;
+    align-content: center;
+}
+
+.services{
+    height: 100vh;
+    background: var(--bgcolor-1);
+    padding:  5rem var(--padding);
+}
+.text-center{
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.box .card{
+    display: block;
+    transition: 1s;
+}
+.card{ 
+    
+    background-color: var(--bgcolor-2);
+width: 160px;
+border-radius: 20px;
+padding: 1.3rem ;
+text-align: center;
+transition: 0.5s;
+margin: 10rem 0;
+
+}
+
+.hid{display: none;}
+.card i{
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--primarycolor);
+    margin: 2rem;
+}
+.card:hover {
+ scale: 1.02;
+}
+.skill{
+    width: 100%;
+    height: 90vh;
+    background-color: var(--bgcolor-2);
+    padding: 5rem var(--padding) 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+.skill .skill-contanter{
+    margin: 0 auto;
+    transition: 1s;
+    
+    
+}
+
+.skill .content-img{
+    position: absolute;
+    width: 70%;
+    display: none;
+}
+.skill .content-img img{
+     width:90%;
+    height: 0px;
+    width: 0px;
+    transition: 2s;
+}
+
+.contant-skill{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+.skill .contant-skill{
+    width: 90%;
+    
+}
+.skills{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: var(--lighting-color);
+    border-radius: 50%;
+    margin: 0 2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    height: 0px;
+    transition: 2s,opacity 0s;
+}
+.skills img{
+    width: 70%;
+    height: 1px;
+    transition: 2s,opacity 0s ,position 10s ,margin 0s; 
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: var(--bgcolor-1);
+}
+::-webkit-scrollbar-track{
+    background:var(--bgcolor-2);
+    box-shadow: 0 0 10px var(--blackc) inset;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--primarycolor);
+    border-radius: 50px;
+    box-shadow:  0 0 10px var(--blackc) inset ;
+    
+}
+
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #555;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    box-shadow: inset 1px 0 0 rgb(255 255 255 / 40%);
+    width: 12px;
+    margin: 2px;
+    position: absolute;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-repeat: repeat-y;
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0)));
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
+    background-image: -o-linear-gradient(left, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
+    background-image: -ms-linear-gradient(left, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
+    background-image: linear-gradient(to right, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.75);
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)";
+}
+.mCSB_scrollTools, .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight {
+    -webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    position: relative;
+    width: 4px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    text-align: center;
+}
+.mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+}
+
+.mCustomScrollBox {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: none;
+    direction: ltr;
+}
+body[herf="../sign up.html"]{
+
+}
+
+
+
