@@ -1,117 +1,165 @@
+/***************************************************************
+*                             ALL                              *
+****************************************************************/
 :root {
-    --primarycolor: #407BFF ;
-    --primarycolor-opa: #407cffd3 ;
-    --secondarycolor: #83aaff ;
+    --primarycolor: #407BFF;
+    --primarycolor-opa: #407cffd3;
+    --secondarycolor: #83aaff;
     --lighting-color: #ffffff;
-    --bgcolor-1: #26313b ;
-    --bgcolor-2: #4e5860 ;
-    --padding:8%;
-    --blackc:black;
+    --bgcolor-1: #26313b;
+    --bgcolor-2: #4e5860;
+    --padding: 8%;
+    --blackc: black;
 
 }
-.light-theme{
-    
-        --primarycolor: #407BFF ;
-        --secondarycolor: #83aaff ;
-        --lighting-color: #000000;
-        --bgcolor-1: #fafbfc ;
-        --bgcolor-2: #d9e0e2 ;
-        --padding:8%;
-        --blackc:black;
-   
-}
-#icon { 
-  
-  width: 30px;
-  cursor: pointer;
+
+.light-theme {
+
+    --primarycolor: #407BFF;
+    --secondarycolor: #83aaff;
+    --lighting-color: #000000;
+    --bgcolor-1: #fafbfc;
+    --bgcolor-2: #d9e0e2;
+    --padding: 8%;
+    --blackc: black;
+
 }
 
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;color: var(--lighting-color)};
-html[herf="index.html"]{font-family: 'Kanit', sans-serif; font-size: 16px;}
-.home{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--bgcolor-1);
-    display: flex;
-    flex-direction: column;
-    text-transform: capitalize;
-    
+#icon {
+
+    width: 30px;
+    cursor: pointer;
 }
-h1{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--lighting-color)
+}
+
+;
+
+html[herf="index.html"] {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
     font-size: 3.65rem;
-    mqrgin:1.7rem 0;
+    mqrgin: 1.7rem 0;
 }
-h2{
-    font-size: 2.2rem;letter-spacing: 0.12; cursor: pointer;
+
+h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.12;
+    cursor: pointer;
 }
-h3{
+
+h3 {
     font-size: 1.5rem;
-    margin-bottom:3rem ;
+    margin-bottom: 3rem;
 }
-h4{
+
+h4 {
     font-size: 1.25rem;
     color: var(--secondarycolor);
 }
-h5{
+
+h5 {
     font-size: 1.37rem;
 }
-p{
+
+p {
     color: var(--secondarycolor);
     letter-spacing: 1px;
     line-height: 1.8rem;
     font-size: 1rem;
 }
 
-span {color: var(--primarycolor);}
-.aa{position: fixed;
-  width: 100%;
-    top: 0; 
+span {
+    color: var(--primarycolor);
+}
+
+/***************************************************************
+*                            header                            *
+****************************************************************/
+.aa {
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-image: linear-gradient(to bottom, var(--bgcolor-1), rgba(0, 0, 0, 0));
 }
-nav{padding-top:1rem; padding-left:var(--padding); padding-right:var(--padding);display: flex;justify-content: space-between; align-items: center;width: 100%;
+
+nav {
+    padding-top: 1rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 
 }
+
 nav ul li {
     list-style-type: none;
     display: inline-block;
     margin: 0.8rem 1.5rem;
-    
+
 }
 
-nav ul li a{
-    color: var(--lighting-color); text-decoration: none; text-transform: capitalize;
-    transition:0.4s;
-}
-nav ul li a:hover{
-    color:var(--primarycolor)
+nav ul li a {
+    color: var(--lighting-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
 }
 
-.btn{
+nav ul li a:hover {
+    color: var(--primarycolor)
+}
+
+.btn {
     background-color: var(--primarycolor);
-    color:white;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     border: 2px solid rgba(0, 0, 0, 0);
     padding: 0.81rem 1.87rem;
     border-radius: 30px;
-    transition:0.4s;
+    transition: 0.4s;
 }
-.btn1{
-    
-    color:var(--lighting-color);
+
+.btn1 {
+
+    color: var(--lighting-color);
     text-decoration: none;
     font-weight: bold;
     padding: 0.81rem 1.87rem;
-    transition:0.4s;
+    transition: 0.4s;
 }
-.btn:hover{
+
+.btn:hover {
     color: var(--primarycolor);
-    background-color: rgba(0,0,0,0); 
+    background-color: rgba(0, 0, 0, 0);
     border: 2px solid var(--primarycolor);
 }
-.content{
+
+/***************************************************************
+*                             home                             *
+****************************************************************/
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor-1);
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+
+}
+
+.content {
     margin-top: 5rem;
     flex-grow: 1;
     padding: 0 var(--padding);
@@ -120,67 +168,76 @@ nav ul li a:hover{
     justify-content: space-between;
 }
 
-.content-text{
-    
+.content-text {
+
     position: relative;
-    bottom: 70px;  
+    bottom: 70px;
 }
-.social{
-    
+
+.social {
+
     align-content: center;
     margin-top: 3.5rem;
-    margin-left: 3rem; 
+    margin-left: 3rem;
 }
-.social a .link{
+
+.social a .link {
     margin-left: .8rem;
     width: 3.2rem;
-    
+
 }
-.social a .active{
+
+.social a .active {
     margin-left: .75rem;
     width: 3.2rem;
-   
+
 }
-.social img{
+
+.social img {
     position: absolute;
     width: 2.5rem;
     transition: 0.4s;
     opacity: 0;
     transition: 1.2s;
-    
+
 }
-.so1{
+
+.so1 {
     rotate: 270deg;
 }
-.so2{
+
+.so2 {
     rotate: -270deg;
 }
 
-.social .active{
+.social .active {
     position: absolute;
     width: 2.5rem;
     transition: 0.4s;
     opacity: 100%;
 }
-.social .link{
+
+.social .link {
     position: absolute;
     width: 2.5rem;
     transition: 0.4s;
     opacity: 100%;
 }
-.social .link:hover{
+
+.social .link:hover {
     opacity: 0;
 }
 
-.home .content-img{
-    
+.home .content-img {
+
     width: 45%;
     height: 90%;
     position: relative;
     align-self: flex-end;
-    
+
 }
-.home .content-img img{
+
+.home .content-img img {
     position: absolute;
     bottom: 0;
     height: 100%;
@@ -189,122 +246,160 @@ nav ul li a:hover{
     transition: 1s;
 }
 
-.content-img:hover .shape{
+.content-img:hover .shape {
     bottom: 40px;
 }
-.content-img:hover .pic{
+
+.content-img:hover .pic {
     left: 45%;
 }
-.about{
-   
+
+/***************************************************************
+*                             about                            *
+****************************************************************/
+.about {
+
     background-color: var(--bgcolor-2);
     padding: 5rem var(--padding);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
 }
-.about .content-img{
+
+.about .content-img {
     width: 45%;
-   
-    
+
+
 }
-.about .content-img img{
-     width:90%;
-     transition: 1s;
+
+.about .content-img img {
+    width: 90%;
+    transition: 1s;
 }
 
 
-.about .content-text{
+.about .content-text {
     bottom: 50%;
     width: 35%;
     transition: 5s;
 
 }
-.about .content-text .text{
+
+.about .content-text .text {
     width: 100%;
     transition: 1.2s;
 }
-.texth5{
+
+.texth5 {
     display: none;
 }
-.bt{
+
+.bt {
     background: var(--primarycolor);
     padding: 0.5rem;
     border-radius: 30px;
     width: 6.9rem;
-    color:white;
+    color: white;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid  #00000000;
+    border: 2px solid #00000000;
     align-content: center;
 }
-.bt2{
+
+.bt2 {
     display: none;
     background: var(--primarycolor);
     padding: 0.5rem;
     border-radius: 30px;
     width: 6.9rem;
-    color:white;
+    color: white;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid  #00000000;
+    border: 2px solid #00000000;
     align-content: center;
-    padding-left:1.7rem ;
+    padding-left: 1.7rem;
 }
-.bt:hover{
-    color:var(--primarycolor);
-    border: 2px solid  var(--primarycolor);
-    background-color: #00000000;
-    align-content: center;
-}
-.bt2:hover{
-    color:var(--primarycolor);
-    border: 2px solid  var(--primarycolor);
+
+.bt:hover {
+    color: var(--primarycolor);
+    border: 2px solid var(--primarycolor);
     background-color: #00000000;
     align-content: center;
 }
 
-.services{
+.bt2:hover {
+    color: var(--primarycolor);
+    border: 2px solid var(--primarycolor);
+    background-color: #00000000;
+    align-content: center;
+}
+
+/***************************************************************
+*                         services                             *
+****************************************************************/
+.hi {
+    width: 250px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services {
     height: 100vh;
     background: var(--bgcolor-1);
-    padding:  5rem var(--padding);
+    padding: 5rem 3rem;
+    overflow: hidden;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.box{
+
+.box {
     display: flex;
     justify-content: space-between;
-    
+
 }
-.box .card{
+
+.box .card {
     display: block;
-    transition: 1s;
+    transition: 0.5s, width 1s, margin 1s;
 }
-.card{ 
-    
+
+.card {
+
     background-color: var(--bgcolor-2);
-width: 160px;
-border-radius: 20px;
-padding: 1.3rem ;
-text-align: center;
-transition: 0.5s;
-margin: 10rem 0;
+    width: 160px;
+    border-radius: 20px;
+    padding: 1.3rem;
+    text-align: center;
+    transition: 0.5s;
+    margin: 10rem 0;
+    cursor: pointer;
 
 }
 
-.hid{display: none;}
-.card i{
+.hid {
+    display: none;
+}
+
+.card i {
     font-size: 3.12rem;
     text-align: center;
     color: var(--primarycolor);
     margin: 2rem;
 }
+
 .card:hover {
- scale: 1.02;
+    scale: 1.02;
 }
-.skill{
+
+/***************************************************************
+*                            skills                            *
+****************************************************************/
+.skill {
     width: 100%;
     height: 90vh;
     background-color: var(--bgcolor-2);
@@ -313,37 +408,41 @@ margin: 10rem 0;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    
-}
-.skill .skill-contanter{
-    margin: 0 auto;
-    transition: 1s;
-    
-    
+
 }
 
-.skill .content-img{
+.skill .skill-contanter {
+    margin: 0 auto;
+    transition: 1s;
+
+
+}
+
+.skill .content-img {
     position: absolute;
     width: 70%;
     display: none;
 }
-.skill .content-img img{
-     width:90%;
+
+.skill .content-img img {
+    width: 90%;
     height: 0px;
     width: 0px;
     transition: 2s;
 }
 
-.contant-skill{
+.contant-skill {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
 }
-.skill .contant-skill{
+
+.skill .contant-skill {
     width: 90%;
-    
+
 }
-.skills{
+
+.skills {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -355,34 +454,45 @@ margin: 10rem 0;
     justify-content: center;
     width: 0px;
     height: 0px;
-    transition: 2s,opacity 0s;
-}
-.skills img{
-    width: 70%;
-    height: 1px;
-    transition: 2s,opacity 0s ,position 10s ,margin 0s; 
+    transition: 2s, opacity 0s;
 }
 
-::-webkit-scrollbar{
+.skills img {
+    width: 70%;
+    height: 1px;
+    transition: 2s, opacity 0s, position 10s, margin 0s;
+}
+
+/***************************************************************
+*                           scrollbar                          *
+****************************************************************/
+::-webkit-scrollbar {
     width: 15px;
     background-color: var(--bgcolor-1);
 }
-::-webkit-scrollbar-track{
-    background:var(--bgcolor-2);
+
+::-webkit-scrollbar-track {
+    background: var(--bgcolor-2);
     box-shadow: 0 0 10px var(--blackc) inset;
     border-radius: 50px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: var(--primarycolor);
     border-radius: 50px;
-    box-shadow:  0 0 10px var(--blackc) inset ;
-    
+    box-shadow: 0 0 10px var(--blackc) inset;
+
 }
 
-.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
     background-color: #555;
 }
-.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     box-shadow: inset 1px 0 0 rgb(255 255 255 / 40%);
     width: 12px;
     margin: 2px;
@@ -393,32 +503,46 @@ margin: 10rem 0;
     left: 0;
     right: 0;
 }
-.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     background-repeat: repeat-y;
-    background-image: -moz-linear-gradient(left, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%);
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0)));
-    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
-    background-image: -o-linear-gradient(left, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
-    background-image: -ms-linear-gradient(left, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
-    background-image: linear-gradient(to right, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
 }
+
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     background-color: #fff;
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255, 255, 255, 0.75);
     filter: "alpha(opacity=75)";
     -ms-filter: "alpha(opacity=75)";
 }
-.mCSB_scrollTools, .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight {
+
+.mCSB_scrollTools,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
     -webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
     -moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
     -o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
     transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
 }
+
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     position: relative;
     width: 4px;
@@ -429,6 +553,7 @@ margin: 10rem 0;
     border-radius: 16px;
     text-align: center;
 }
+
 .mCSB_scrollTools .mCSB_dragger {
     cursor: pointer;
     width: 100%;
@@ -444,9 +569,5 @@ margin: 10rem 0;
     outline: none;
     direction: ltr;
 }
-body[herf="../sign up.html"]{
 
-}
-
-
-
+body[herf="../sign up.html"] {}

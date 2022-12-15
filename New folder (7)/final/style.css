@@ -16,9 +16,19 @@ body {
     font-size: 2rem;
     color: #0095ed;
 }
-.back:hover{
+.back i{
+    cursor: pointer;
+    
+}
+.back a{
+    color: #0095ed;
+    text-decoration: none;
+    
+}
+.back i:hover{
     font-size: 2rem;
     color: #7ccfff;
+    
 }
 .container {
     width: 85%;
