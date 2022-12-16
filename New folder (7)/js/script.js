@@ -6,6 +6,29 @@ icon.src ="PNG & SVG/moon.png";
 } else {
 icon.src = "PNG & SVG/sun.png";
 }
+
+
+});
+const icon2 = document.getElementById("icon2");
+icon2.addEventListener("click", () => {
+document.body.classList.toggle("light-theme");
+if (document.body.classList.contains("light-theme")) {
+icon2.src ="PNG & SVG/moon.png"; 
+} else {
+icon2.src = "PNG & SVG/sun.png";
+}
+
+
+})
+const menu = document.getElementById("menu");
+const vr = document.getElementById("vr");
+menu.addEventListener("click", ()=>{
+    hundmenu()
+function hundmenu(){
+    
+menu.classList.toggle("is-active");
+vr.classList.toggle("is-active");
+}
 });
 function fun(){
         
@@ -75,21 +98,22 @@ function fun2(m){
     document.getElementById("no1").style.display="none"; } 
 }
 function fun11(m){
-
     if (document.getElementById("hid1").style.display==0 || document.getElementById("hid1").style.display=="none" ){
     document.getElementById("hid1").style.display="contents";
     document.getElementById("hid11").style.display="contents";
     document.getElementById("crd1").style.width="250px";
     document.getElementById("crd1").style.margin="0 0";
-
+    
 }
+
 
 else{
     document.getElementById("crd1").style.margin=" 10rem 0";
     document.getElementById("hid1").style.display="none";
     document.getElementById("hid11").style.display="none";
     document.getElementById("crd1").style.width="160px";
-    }}
+    }
+}
 
 
 function fun12(m){
@@ -145,7 +169,10 @@ else{
     document.getElementById("crd4").style.width="160px";
     }}
     function fun4(){
-       
+        
+       if(screen.width<=1536){
+        document.getElementById("rel").style.margin="0rem";
+       }
         
         if (document.getElementById("im1").style.width=="0px"||document.getElementById("im1").style.width==0){
         document.getElementById("im1").style.width="70px";
@@ -188,7 +215,7 @@ else{
         document.getElementById("im12").style.height="70px";
         document.getElementById("img1").style.height="500px";
         document.getElementById("img1").style.width="400px";
-        document.getElementById("rel").style.margin="4rem";
+        document.getElementById("rel").style.margin="var(--mar)";
         document.getElementById("img2").style.width="70%";
         document.getElementById("img2").style.position="relative";
         document.getElementById("im1").style.position="relative";
@@ -319,4 +346,3 @@ else{
         }
        
     }
-
