@@ -854,7 +854,10 @@ nav ul li a:hover i{
             width: 20px;
         }
     }
-    @media screen and (max-width: 827px) {
+    
+    } 
+@media screen and (max-width: 827px) {
+    @media screen and (max-height: 500px) {
         h1{
             font-size: 2rem ;
             margin: 0;
@@ -864,7 +867,6 @@ nav ul li a:hover i{
         } 
         .services{
             height: 160%;
-        }  
+        } }
     }
-    } 
     
