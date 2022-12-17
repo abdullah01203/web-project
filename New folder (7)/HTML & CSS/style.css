@@ -1,29 +1,7 @@
 /***************************************************************
 *                             ALL                              *
 ****************************************************************/
-:root { 
-    --primarycolor: #407BFF;
-    --primarycolor-opa: #407cffd3;
-    --secondarycolor: #83aaff;
-    --lighting-color: #ffffff;
-    --bgcolor-1: #26313b;
-    --bgcolor-2: #4e5860;
-    --padding: 8%;
-    --blackc: black;
-    --mar: 4rem;
-}
 
-.light-theme {
-
-    --primarycolor: #407BFF;
-    --secondarycolor: #83aaff;
-    --lighting-color: #000000;
-    --bgcolor-1: #fafbfc;
-    --bgcolor-2: #d9e0e2;
-    --padding: 8%;
-    --blackc: black;
-
-}
 
 
 #icon {
@@ -41,7 +19,9 @@
 }
 
 
-
+#page2{
+    display: none;
+}
 html{
     font-family: 'Kanit', sans-serif; font-size: 16px;color: var(--lighting-color);
 }
@@ -85,7 +65,9 @@ span {
 /***************************************************************
 *                            header                            *
 ****************************************************************/
-
+.hh1{
+    display: none;
+}
 .aa {
     position: fixed;
     width: 100%;
@@ -123,8 +105,17 @@ nav ul li a {
     text-transform: capitalize;
     transition: 0.4s 
 }
+nav ul li a i{
+    color: var(--lighting-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s 
+}
 
 nav ul li a:hover {
+    color: var(--primarycolor)
+}
+nav ul li a:hover i{
     color: var(--primarycolor)
 }
 
@@ -138,7 +129,25 @@ nav ul li a:hover {
     border-radius: 30px;
     transition: 0.4s;
 }
-
+.btn5{
+    background-color: var(--primarycolor);
+    color: white;
+    font-size: .8rem;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.btn15{
+    color: var(--lighting-color);
+    font-size: .8rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem ;
+    transition: 0.4s;  
+}
 .btn1 {
 
     color: var(--lighting-color);
@@ -584,7 +593,17 @@ nav ul li a:hover {
 ****************************************************************/
 @media  screen and (max-width: 571px) {
     :root{
-        --mar:0;
+    --mar:0;
+    --mrgin:1rem;
+    --margin1:0 0 0 3rem;
+    --margin2:0 0 0 7rem;
+    --margin3:0 0 0 -3rem;
+    --margin4:0 0 0 -7rem;
+    --null:0;
+    }
+    .skill .contant-skill {
+        width: 100%;
+    
     }
     html{
         font-family: 'Kanit', sans-serif; font-size: 16px;color: var(--lighting-color);
@@ -714,7 +733,7 @@ nav ul li a:hover {
         height: 100vh;
         background-color: var(--bgcolor-2) ; 
         box-shadow: 2rem 2rem 2rem 2rem var(--primarycolor) ;
-        z-index:100px;
+        
     }
     nav ul a{
         font-size: 1rem;
@@ -722,15 +741,114 @@ nav ul li a:hover {
     nav ul.is-active{
     display: block;
     }
+    
     nav ul li{
         display: block;
-        text-align: center;
+        border-bottom: 2px solid var(--primarycolor);
         margin: 30px;
         
         
+    }
+    .hh1{
+        display: block;
+   
+}
+#dif{
+    border: none;
+}
+    
+    .social a .link {
+        margin-left: 0;
+        width: 3.2rem;
+    
+    }
+    
+    .social a .active {
+        margin-left: 0;
+        width: 3.2rem;
+    
     }
    
 
     
 }
-
+@media screen and (max-width: 850px) {
+    @media screen and (max-height: 400px) {
+        h1{
+            font-size: 1rem;
+        }
+        #img1{
+            display: none;
+        }
+        :root{
+            --width:170px ;
+            --margin0:6rem 0;
+            --width2:5rem;
+            --mar:0;
+            --hi:50px;
+            --h:10000px;
+        }
+        .home{
+            flex-direction:row;
+        }
+        .home .content-img img{
+            height: 90%;
+        }
+        .home .content-text{
+            margin-top: 4rem;
+        }
+       
+        .aa nav a{
+            font-size: .7rem;
+            padding: 5px 10px;
+        }
+        .about{
+            height: 150vh;
+        }
+        .about .content-text{
+            bottom: 0;
+           width: 50%;
+        }
+        .services{
+            padding-top: 3rem;
+            height: 120vh;
+        }
+        .hi{
+            height: 100%;
+        }
+        .card{
+            margin: 6rem 0;
+            width: 5rem;
+            padding: 0;
+            
+        }
+        .card h5 {
+            font-size: 1rem;
+        }
+        .card p {
+            font-size: .7rem;
+        }
+        .card i {
+            font-size: 2rem;
+            text-align: center;
+            color: var(--primarycolor);
+            margin: 2rem 0 0;
+        }
+        h1{
+            font-size: 2rem ;
+            margin: 0;
+        }
+        h2{
+            font-size: 1.4rem;
+        }
+        nav ul a{
+            font-size: .7rem;
+        }
+        nav ul li{
+            margin: 0;
+        }
+        #icon{
+            width: 20px;
+        }
+    }
+    }  
