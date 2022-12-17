@@ -444,6 +444,7 @@ nav ul li a:hover i{
 }
 
 .skill .content-img img {
+    display: block;
     width: 90%;
     height: 0px;
     width: 0px;
@@ -600,6 +601,7 @@ nav ul li a:hover i{
     --margin3:0 0 0 -3rem;
     --margin4:0 0 0 -7rem;
     --null:0;
+    --h:10000px;
     }
     .skill .contant-skill {
         width: 100%;

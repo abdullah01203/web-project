@@ -218,7 +218,7 @@ else{
         document.getElementById("m11").style.height="70%";
         document.getElementById("im12").style.width="var(--hi)";
         document.getElementById("im12").style.height="var(--hi)";
-        document.getElementById("img1").style.height="500x";
+        document.getElementById("img1").style.height="500px";
         document.getElementById("img1").style.width="400px";
         document.getElementById("rel").style.margin="var(--mar)";
         document.getElementById("rel").style.width="var(--h)";
